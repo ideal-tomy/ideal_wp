@@ -315,60 +315,94 @@
                 </div>
             </section>
 
-            <!-- 第2章：具体的なアプローチとツール（The Mechanism） -->
             <section id="mechanism" class="py-16 border-b border-gray-800">
                 <p class="text-lg font-semibold text-accent-gold mb-2">3. The Mechanism</p>
                 <h2 class="text-4xl font-bold mb-8">
-                    具体的なアプローチとツール
+                    基本設計
                 </h2>
-                <h3 class="text-2xl font-semibold text-gray-200 mb-6 border-l-4 border-accent-gold pl-4">思想を現実にする技術とプロダクト</h3>
-
-                <h4 class="text-xl font-bold mt-8 mb-4 text-accent-gold">1. AI駆動型PoCツールの機能と導入事例</h4>
-                <p class="text-gray-300 mb-6">AI駆動型PoCツールは、以下の機能を通じて貢献度の測定と可視化を行います。</p>
+            
+                <div class="space-y-6 text-gray-300 text-lg leading-relaxed mb-12">
+                    <p>
+                        私たちの設計思想の中心は<strong>「貢献度測定（Proof of Contribution）」</strong>に集約されます。
+                        なぜなら、これまで測定が難しかった本質的価値の測定や、「本質的価値を評価基準の明確化」こそが、
+                        所属している全ての人の行動原理となり、結果、組織全体の原動力となるからです。
+                    </p>
+                    <p>
+                        人間による評価は、リソースの限界と避けられないバイアスにより、実現したくても実現できないことによる不公平と搾取の温床となってしまっていました。
+                        私たちは、この「人間とこれまでの技術よる評価の限界」を、<strong>AIとブロックチェーンが永続的に連携する「貢献度測定ツール」</strong>によって実現することを目指します。
+                    </p>
+                </div>
+            
                 
-                <!-- Table for PoC Features -->
-                <div class="overflow-x-auto rounded-lg shadow-2xl">
-                    <table class="min-w-full divide-y divide-gray-700 whitepaper-table bg-section-bg">
-                        <thead class="bg-gray-700">
-                            <tr>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-accent-gold uppercase tracking-wider">機能</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-accent-gold uppercase tracking-wider">概要</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-accent-gold uppercase tracking-wider">価値提供</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-700">
-                            <tr class="hover:bg-gray-700 transition duration-150">
-                                <td class="px-6 py-4 whitespace-nowrap font-semibold">影響力マッピング</td>
-                                <td class="px-6 py-4">コミュニケーションツールのデータを解析し、誰のインプットが最もプロジェクトの方向性に影響を与えたかを定量化。</td>
-                                <td class="px-6 py-4 text-sm text-gray-400">**「発言の質」**を評価軸に組み込む。</td>
-                            </tr>
-                            <tr class="hover:bg-gray-700 transition duration-150">
-                                <td class="px-6 py-4 whitespace-nowrap font-semibold">知識共有メトリクス</td>
-                                <td class="px-6 py-4">ドキュメント作成、レビュー、質問への回答時間を追跡し、組織全体の知識の流動性への貢献をスコアリング。</td>
-                                <td class="px-6 py-4 text-sm text-gray-400">**「見えないメンタリング」**を収益化。</td>
-                            </tr>
-                            <tr class="hover:bg-gray-700 transition duration-150">
-                                <td class="px-6 py-4 whitespace-nowrap font-semibold">リスクファクター低減計測</td>
-                                <td class="px-6 py-4">潜在的なバグやプロセスのボトルネックを指摘し、それが未然に防いだ損害額を推定し貢献度として加算。</td>
-                                <td class="px-6 py-4 text-sm text-gray-400">**「失敗を未然に防ぐ貢献」**を可視化。</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="p-6 md:p-8 rounded-xl bg-section-bg shadow-2xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-gray-200 mb-6 border-l-4 border-accent-gold pl-4">
+                        公正さを支える6つの絶対条件
+                    </h3>
+                    <p class="text-gray-400 mb-8">
+                        この基盤は、以下の揺るぎない絶対条件（設計原則）の上に構築されます。一つでも欠ければ、このシステムは旧来の評価ツールと同じ運命を辿るでしょう。
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-600">
+                            <p class="font-bold text-accent-gold">1. 透明性と自動化</p>
+                            <p class="text-sm text-gray-400 mt-1">意思決定プロセスと実行はコード化され、人間の恣意的な介入の実行を高コストな状態とする。</p>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-600">
+                            <p class="font-bold text-accent-gold">2. 超人的なスケールでの貢献検知</p>
+                            <p class="text-sm text-gray-400 mt-1">AIが、広範囲に及ぶ影響と、人間には見過ごされる微細な貢献の両方を検知する。</p>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-600">
+                            <p class="font-bold text-accent-gold">3. 自己防衛する免疫システム</p>
+                            <p class="text-sm text-gray-400 mt-1">定量化による攻略活動が合理的とならない仕組みを導入・実現できること</p>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-600">
+                            <p class="font-bold text-accent-gold">4. 中長期的に影響を反映させる仕組み</p>
+                            <p class="text-sm text-gray-400 mt-1">中長期的な貢献度が与える中長期的な影響を加味できること</p>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-600">
+                            <p class="font-bold text-accent-gold">5. 進化する価値基準</p>
+                            <p class="text-sm text-gray-400 mt-1">時代や環境の変化に合わせ、コミュニティが透明なプロセスで価値基準を更新できる。</p>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-600">
+                            <p class="font-bold text-accent-gold">6. プライバシーと透明性の両立</p>
+                            <p class="text-sm text-gray-400 mt-1">プロセスの透明性を担保しつつ、個人の心理的安全性を守るプライバシー保護がなされている。</p>
+                        </div>
+                    </div>
+                　</div>
+
+                <h3 class="text-2xl font-semibold text-gray-200 mb-6 border-l-4 border-accent-gold pl-4 mt-4">各工程</h3>
+            
+                <div class="space-y-12">
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-accent-gold">ステップ1：AIによる貢献の『観測』</h4>
+                        <p class="text-gray-300 mb-6">エンジンは、AIによる多角的なデータ観測から始まります。AIは、人間では不可能だった貢献範囲と貢献要素に対し、リアルタイムに感知し情報を集積するように設計します。</p>
+                        <div class="overflow-x-auto rounded-lg shadow-2xl">
+                            </div>
+                    </div>
+            
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-accent-gold">ステップ2：ブロックチェーンによる『記録に基づく計算】と記録の保全</h4>
+                        <p class="text-gray-300 mb-6">AIによって感知された情報は、ブロックチェーン上に「PoC要素」として刻まれます。この情報を中長期的に貢献度測定の影響要素とすることで、貢献は一過性の評価ではなく、個人に永続的に紐づく"デジタル資産"となります。</p>
+                        <div class="space-y-4 text-gray-300 bg-section-bg p-6 rounded-lg border border-gray-700/50">
+                            <p>このスコアは、組織に対して紐づくものではなく活動者個人に紐づくものとします。また組織の解散や転職によってリセットされることはありません。
+                                長期的な活動履歴の積み重ねが、個々人の価値観や評価基準の揺るがない情報となります。</p>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 text-accent-gold">ステップ3：スマートコントラクトによるインセンティブの『自動執行』</h4>
+                        <p class="text-gray-300 mb-6">ブロックチェーンに記録されたPoC要素を基に既定の貢献度測定を行い、決められた計算に基づきスマートコントラクトがインセンティブを自動執行します。
+                            ここには一切の人間的裁量や遅延は介在出来ないものとします。</p>
+                        <div class="space-y-4 text-gray-300">
+                            <ul class="list-disc list-inside ml-4 space-y-2">
+                                <li><b>トークンエコノミクス:</b> PoC要素に基づく結果に応じて執行されるインセンティブ報酬の移動は、トークンによって行われることで実現可能となります。</li>
+                                <li><b>ガバナンス設計:</b> 各組織や集団ごとのの意思決定プロセスに基づき、投票方式やリワードにトークン活用が可能な環境を実現します。</li>
+                            </ul>
+                            <p class="font-bold mt-4">この自動執行されたインセンティブの基となる要素が、中長期的にその個人のインセンティブに永続的に影響を与える仕組みとなることで、
+                                一つ一つの判断や行動に中長期的な責任とリスクを発生させます。</p>
+                        </div>
+                    </div>
                 </div>
-
-                <p class="text-gray-300 mt-6">**（テストケース事例：ローカルビジネスDAO）** 既存の強みであるローカルSEOのノウハウ提供者に対し、そのノウハウが実際に提携店舗の売上増加に寄与し、コミュニティ内の質問応答率向上に貢献した度合いをPoCで測定し、そのスコアに応じてローカルエコノミートークンを自動分配。</p>
-
-                <h4 class="text-xl font-bold mt-12 mb-4 text-accent-gold">2. 理想の組織構造を規定するスマートコントラクト設計</h4>
-                <div class="space-y-4 text-gray-300">
-                    <p>理想的なDAOの構造は、**公正さ（Fairness）が設計そのものに組み込まれている**必要があります。</p>
-                    <ul class="list-disc list-inside ml-4 space-y-2">
-                        <li>**トークンエコノミクス:** PoCスコアに応じて発行される貢献トークンは、直接的な報酬だけでなく、ガバナンス投票権や特典へのアクセス権に直結します。</li>
-                        <li>**ガバナンス設計:** 投票メカニズムには、単なるトークン量だけでなく、**「価値持続スコア」を重み付け**として組み込みます。これにより、長期的な信頼を積み重ねたメンバーの発言力が強まり、短期的な投機家による組織の乗っ取りを防ぎます。</li>
-                    </ul>
-                </div>
-
-                <h4 class="text-xl font-bold mt-12 mb-4 text-accent-gold">3. 既存の強みの統合と実証実験</h4>
-                <p class="text-gray-300">御社の持つローカルSEOや特定の業界知識といった**既存の強み**は、PoCシステムの**初期実証実験（Pilot Program）**に最適です。既存顧客や連携コミュニティを対象にPoCを導入し、実際に「正直さが収益性の向上に直結する」という仮説を検証します。この具体的で現実的なテストケースこそが、思想が絵空事ではないことを示す、最大の信頼性の源となります。</p>
             </section>
 
             <!-- 第3章：エコシステムが実現する環境と本質的構造（The Structure） -->
@@ -469,6 +503,15 @@
 
     <!-- JavaScript for Smooth Scrolling -->
     <script src="script.js"></script>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+</body>
+</html>
 
 </body>
 </html>
